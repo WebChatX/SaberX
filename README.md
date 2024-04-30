@@ -8,6 +8,9 @@
 ### B
 ### C
 ### D
+
+- `debounce: (func: Function, delay: number) => Function`：防抖函数，用于限制函数的执行频率。
+
 ### E
 ### F
 ### G
