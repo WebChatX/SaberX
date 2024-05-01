@@ -7,12 +7,14 @@
 function debounce(func, delay)
 {
   let timerId = null;
-  return (...args) => {
+  return function(...args) {
+    const context = this;
     if (timerId) {
       clearTimeout(timerId);
     }
     timerId = setTimeout(() => {
-      func.apply(this, args);
+      func.apply(context, args);
+      timerId = null;
     }, delay);
   }
 }
