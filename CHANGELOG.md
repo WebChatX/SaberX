@@ -1,11 +1,3 @@
-<!--
- * @Author: liliang 1220795758@qq.com
- * @Date: 2024-04-29 11:31:19
- * @LastEditors: liliang 1220795758@qq.com
- * @LastEditTime: 2024-05-02 08:46:32
- * @FilePath: \saber-x\CHANGELOG.md
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
 ### 2024-04-29
 
 新增函数：
@@ -26,3 +18,8 @@
 
 新增函数：
 - `throttle`：创建一个节流函数，确保在一定时间间隔内只调用一次指定的函数。
+
+### 2024-05-03
+
+新增函数：
+- `copyToClipboard`：将文本复制到剪贴板。
