@@ -5,44 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function copyToClipboard(text) {
-        return new Promise((resolve) => {
-          if (navigator.clipboard) {
-            navigator.clipboard.writeText(text).then(
-              () => resolve(true),
-              () => resolve(false)
-            );
-          } else {
-            debugger;
-            const textAreaEl = document.createElement("textarea");
-            textAreaEl.value = text;
-            textAreaEl.style.position = "fixed";
-            textAreaEl.style.opacity = 0;
-            document.body.appendChild(textAreaEl);
-            textAreaEl.select();
-            try {
-              document.execCommand("copy") ? resolve(true) : resolve(false);
-            } catch (error) {
-              resolve(false);
-            }
-            document.body.removeChild(textAreaEl);
-          }
-        });
+      function isValidEmail(email) {
+        if (typeof email !== "string" || email.trim() === "") {
+          return false;
+        }
+        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
       }
     </script>
   </head>
   <body>
     <button onclick="copy()">123</button>
 
-    <script>
-      const copy = async () => {
-        const ret = await copyToClipboard(Date.now());
-        if (ret) {
-          console.log("复制成功");
-        } else {
-          console.log("复制失败");
-        }
-      };
-    </script>
+    <script></script>
   </body>
 </html>

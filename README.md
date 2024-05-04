@@ -19,6 +19,9 @@
 ### G
 ### H
 ### I
+
+- `isValidEmail: (email: string) => boolean`：验证邮箱地址格式是否符合规范。
+
 ### J
 ### K
 ### L
