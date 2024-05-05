@@ -5,6 +5,9 @@
 - `$$: (selectors: string) => NodeListOf<Element>`：接收选择器字符串，返回与选择器匹配的全部DOM元素。
 
 ### A
+
+- `assert: (condition: boolean, errorMessage: string, enabled: boolean) => void`：断言函数，用于验证条件是否满足，如果条件不满足则抛出错误。
+
 ### B
 ### C
 
