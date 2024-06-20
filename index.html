@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      function isValidEmail(email) {
-        if (typeof email !== "string" || email.trim() === "") {
-          return false;
+      function section(text, sep, index) {
+        if (typeof text !== "string") {
+          throw new Error("text is not a string type.");
         }
-        return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+        const textArr = text.split(sep);
+        if (index >= 0) {
+          return textArr[index];
+        } else {
+          return textArr[textArr.length + index];
+        }
       }
     </script>
   </head>
   <body>
-    <button onclick="copy()">123</button>
+    <button onclick="test()">123</button>
 
-    <script></script>
+    <script>
+      const test = () => {
+        const ret = section("1220795758@qq.com", "@", 0);
+        console.log(ret);
+      };
+    </script>
   </body>
 </html>

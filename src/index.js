@@ -6,6 +6,7 @@ import copyToClipboard from "./copyToClipboard.js";
 import isValidEmail from "./isValidEmail.js";
 import assert from "./assert.js";
 import isValidPhone from "./isValidPhone.js";
+import section from "./section.js";
 
 export {
   $,
@@ -15,5 +16,6 @@ export {
   copyToClipboard,
   isValidEmail,
   assert,
-  isValidPhone
+  isValidPhone,
+  section
 };
