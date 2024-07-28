@@ -46,6 +46,8 @@
 
 ### P
 
+- `parseQuery: (url: string) => Object`：解析 url，获取 query 对象。
+
 ### Q
 
 ### R

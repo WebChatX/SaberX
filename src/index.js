@@ -7,6 +7,7 @@ import isValidEmail from "./isValidEmail.js";
 import assert from "./assert.js";
 import isValidPhone from "./isValidPhone.js";
 import section from "./section.js";
+import parseQuery from "./parseQuery.js";
 
 export {
   $,
@@ -17,5 +18,6 @@ export {
   isValidEmail,
   assert,
   isValidPhone,
-  section
+  section,
+  parseQuery
 };
